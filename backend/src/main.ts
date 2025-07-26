@@ -1,6 +1,8 @@
 import { NestFactory } from '@nestjs/core';
 import { ValidationPipe, Logger } from '@nestjs/common';
 import { AppModule } from './app.module';
+import { HttpExceptionFilter } from './filters/http-exception.filter';
+import { TransformInterceptor } from './interceptors/transform.interceptor';
 
 async function bootstrap() {
   const logger = new Logger('Bootstrap');
@@ -24,6 +26,12 @@ async function bootstrap() {
     }),
   );
 
+  // Global exception filter
+  app.useGlobalFilters(new HttpExceptionFilter());
+
+  // Global interceptor
+  app.useGlobalInterceptors(new TransformInterceptor());
+
   // Global prefix
   app.setGlobalPrefix('api/v1');
 
@@ -32,5 +40,6 @@ async function bootstrap() {
   
   logger.log(`🚀 Application is running on: http://localhost:${port}`);
   logger.log(`📚 API Documentation available at: http://localhost:${port}/api/v1`);
+  logger.log(`🔧 Environment: ${process.env.NODE_ENV || 'development'}`);
 }
 bootstrap();

@@ -1,0 +1,62 @@
+﻿🧪 Stunning Technical Challenge
+Objective:
+
+Show us how you debug, build cleanly, think critically, and use AI tools (like Cursor) in your workflow — just like we do at Stunning.
+________________
+
+
+🔧 The Task
+Using Next.js, NestJS, and MongoDB, and an AI-powered IDE (Cursor, Copilot, etc.), do the following:
+1. Build a simple form in Next.js where a user enters a website idea (e.g., “Landing page for bakery”).
+
+2. On submit, send the prompt to a NestJS API that returns 3 dummy sections (e.g., "Hero", "About", "Contact").
+
+3. Store these sections in MongoDB.
+
+4. Fetch the stored sections and render them as a basic preview.
+
+5. Add loading state + basic error handling.
+
+🧠 The data structure and how you handle logic is up to you — we care about quality and thought process.
+________________
+
+
+📹 Loom Video (Required)
+Record a 3–4 minute Loom showing:
+   * How you used AI tools in your process
+
+   * Your project structure and logic
+
+   * Any assumptions or decisions made
+
+   * What you'd improve with more time
+
+   * What issues you anticipated and handled
+
+________________
+
+
+🧠 What We’re Evaluating
+      * Your ability to build cleanly and quickly
+
+      * How you think about architecture and UX
+
+      * Use of AI tools to speed up work
+
+      * Attention to detail and data structure
+
+      * Communication and clarity of thought
+________________
+
+
+📬 Submission Instructions
+         * Push your code to a public GitHub repo
+
+         * Include a brief README.md with setup instructions and any notes
+
+         * Share your Loom video link
+
+         * Submit both via email
+
+
+Send material by email to mohamed@stunning.so no later than 26th July 2025.
